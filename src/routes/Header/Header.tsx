@@ -128,7 +128,7 @@ function Header() {
                         transition: 'margin 0.3s ease-in-out',
                       }}
                     >
-                      <TariLogo fill={theme.palette.text.primary} />
+                      <TariLogo  />
                     </Box>
                   </Link>
                 </Grid>
@@ -142,17 +142,13 @@ function Header() {
                     }}
                   >
                     <StatsItem
-                      label="RandomX Hash Rate"
+                      label="Verus Hash Rate"
                       value={formattedMoneroHashRate}
                     />
                     <Divider
                       orientation="vertical"
                       flexItem
                       color={theme.palette.divider}
-                    />
-                    <StatsItem
-                      label="Sha3 Hash Rate"
-                      value={formattedSha3HashRate}
                     />
                     <Divider
                       orientation="vertical"

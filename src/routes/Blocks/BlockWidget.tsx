@@ -113,7 +113,7 @@ function BlockWidget() {
               </Grid>
 
               <Grid item xs={col1}>
-                <Typography variant="body2">Proof of Work</Typography>
+                <Typography variant="body2">POW/POS</Typography>
               </Grid>
               <Grid item xs={col2}>
                 <TypographyData>
@@ -216,20 +216,12 @@ function BlockWidget() {
             <Typography variant="body2">Time</Typography>
           </Grid>
           <Grid item xs={col3} md={col3} lg={col3}>
-            <Typography variant="body2">Proof of Work</Typography>
+            <Typography variant="body2">POW/POS</Typography>
           </Grid>
           <Grid item xs={col4} md={col4} lg={col4}>
             <Typography variant="body2">Hash</Typography>
           </Grid>
-          <Grid
-            item
-            xs={col5}
-            md={col5}
-            lg={col5}
-            style={{ textAlign: 'center' }}
-          >
-            <Typography variant="body2">Kernels</Typography>
-          </Grid>
+
           <Grid
             item
             xs={col6}
@@ -273,7 +265,7 @@ function BlockWidget() {
                 </Grid>
                 <Grid item xs={col3} md={col3} lg={col3}>
                   <TypographyData>
-                    {block.pow.pow_algo === '0' ? 'RandomX' : 'SHA-3'}
+                    {block.pow.pow_algo === '0' ? 'POW' : 'POS'}
                   </TypographyData>
                 </Grid>
                 <Grid item xs={col4} md={col4} lg={col4}>
@@ -282,15 +274,7 @@ function BlockWidget() {
                     <CopyToClipboard copy={toHexString(block.hash.data)} />
                   </TypographyData>
                 </Grid>
-                <Grid
-                  item
-                  xs={col5}
-                  md={col5}
-                  lg={col5}
-                  style={{ textAlign: 'center' }}
-                >
-                  <TypographyData>{block.kernels}</TypographyData>
-                </Grid>
+
                 <Grid
                   item
                   xs={col6}

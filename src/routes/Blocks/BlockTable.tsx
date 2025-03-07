@@ -168,11 +168,11 @@ function BlockTable() {
             </Grid>
 
             <Grid item xs={col1}>
-              <Typography variant="body2">Proof of Work</Typography>
+              <Typography variant="body2">POW/POS</Typography>
             </Grid>
             <Grid item xs={col2}>
               <TypographyData>
-                {block.pow.pow_algo === '0' ? 'RandomX' : 'SHA-3'}
+                {block.pow.pow_algo === '0' ? 'POW' : 'POS'}
               </TypographyData>
             </Grid>
 
@@ -233,7 +233,7 @@ function BlockTable() {
           <Typography variant="body2">Time</Typography>
         </Grid>
         <Grid item xs={col3} md={col3} lg={col3}>
-          <Typography variant="body2">Proof of Work</Typography>
+          <Typography variant="body2">POW/POS</Typography>
         </Grid>
         <Grid item xs={col4} md={col4} lg={col4}>
           <Typography variant="body2">Hash</Typography>

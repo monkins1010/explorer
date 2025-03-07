@@ -30,7 +30,7 @@ import { Alert, Skeleton } from '@mui/material';
 import { TransparentBg } from '../../components/StyledComponents';
 
 interface HashRatesProps {
-  type: 'RandomX' | 'Sha3';
+  type: 'RandomX' | 'Sha3' | "VerusHash V2.2";
 }
 
 interface Display {

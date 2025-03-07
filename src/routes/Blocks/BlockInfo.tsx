@@ -46,8 +46,8 @@ function BlockInfo({ blockHeight }: { blockHeight: any }) {
       copy: true,
     },
     {
-      label: 'Proof of Work',
-      value: header?.pow?.pow_algo === '0' ? 'RandomX' : 'SHA-3',
+      label: 'POW.POS',
+      value: header?.pow?.pow_algo === '0' ? 'POW' : 'POS',
       copy: false,
     },
     {

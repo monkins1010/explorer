@@ -28,7 +28,7 @@ import { Alert, Skeleton } from '@mui/material';
 import { TransparentBg } from '../../components/StyledComponents';
 
 interface BlockTimesProps {
-  type: 'RandomX' | 'Sha3';
+  type: 'RandomX' | 'Sha3' | 'VerusHash V2.2';
 }
 
 const BlockTimes: React.FC<BlockTimesProps> = ({ type }) => {
