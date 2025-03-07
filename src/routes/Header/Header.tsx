@@ -48,7 +48,7 @@ function Header() {
   );
 
   const latestMoneroHashRate = data?.currentMoneroHashRate ?? 0;
-  const latestShaHashRate = data?.currentShaHashRate ?? 0;
+
 
   const average = sum / values.length;
   const formattedAverageBlockTime = numeral(average).format('0') + 'm';
@@ -56,7 +56,6 @@ function Header() {
     data?.tipInfo.metadata.best_block_height
   ).format('0,0');
   const formattedMoneroHashRate = formatHash(latestMoneroHashRate);
-  const formattedSha3HashRate = formatHash(latestShaHashRate);
 
   return (
     <Grid item xs={12} md={12} lg={12}>
@@ -89,7 +88,7 @@ function Header() {
                           transition: 'margin 0.3s ease-in-out',
                         }}
                       >
-                        <TariLogo fill={theme.palette.text.primary} />
+                        <TariLogo/>
                       </Box>
                     </Link>
                   </Fade>

@@ -174,7 +174,6 @@ function BlockWidget() {
     const col2 = 2;
     const col3 = 2;
     const col4 = 4;
-    const col5 = 1;
     const col6 = 1;
 
     if (isError) {
